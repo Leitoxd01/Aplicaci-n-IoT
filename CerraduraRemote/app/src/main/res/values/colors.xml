@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorFondo">#FFFFFF</color> <!-- Example: White -->
+    <color name="colorTexto">#000000</color> <!-- Example: Black -->
+    <color name="colorBoton">#6200EE</color> <!-- Example: A purple shade -->
+    <color name="colorBotonTexto">#FFFFFF</color> <!-- Example: White -->
+    <!-- Agrega esta línea con el color que desees -->
+    <color name="colorSecundario">#CCCCCC</color> <!-- Ejemplo: Gris claro -->
+</resources>
+
+
+
