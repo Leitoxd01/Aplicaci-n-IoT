@@ -21,7 +21,6 @@ class Registro : AppCompatActivity() {
             if (usuario.isEmpty() || contrasena.isEmpty()) {
                 Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
             } else {
-                // Simulación (sin guardar datos)
                 Toast.makeText(this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show()
                 finish()
             }

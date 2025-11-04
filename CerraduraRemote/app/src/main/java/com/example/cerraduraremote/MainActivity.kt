@@ -21,20 +21,16 @@ class MainActivity : AppCompatActivity() {
         val usuario = intent.getStringExtra("usuario") ?: "Usuario"
         txtBienvenido.text = "Bienvenido, $usuario"
 
-        // Lista de dispositivos conectados
         val dispositivosConectados = listOf("Cerradura entrada", "Cerradura trasera")
         val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, dispositivosConectados)
         listView.adapter = adapter
 
-        // Al tocar un dispositivo, abre la pantalla de control
         listView.setOnItemClickListener { _, _, position, _ ->
             val nombre = dispositivosConectados[position]
             val intent = Intent(this, Cerradura::class.java)
             intent.putExtra("nombreCerradura", nombre)
             startActivity(intent)
         }
-
-        // Botón para buscar nuevos dispositivos
         btnBuscar.setOnClickListener {
             startActivity(Intent(this, Buscar::class.java))
         }

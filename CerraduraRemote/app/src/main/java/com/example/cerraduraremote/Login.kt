@@ -23,7 +23,6 @@ class Login : AppCompatActivity() {
             if (usuario.isEmpty() || contrasena.isEmpty()) {
                 Toast.makeText(this, "Completa todos los campos", Toast.LENGTH_SHORT).show()
             } else {
-                // Simulación de inicio de sesión exitoso
                 Toast.makeText(this, "Inicio de sesión exitoso", Toast.LENGTH_SHORT).show()
                 val intent = Intent(this, MainActivity::class.java)
                 intent.putExtra("usuario", usuario)
@@ -31,7 +30,6 @@ class Login : AppCompatActivity() {
                 finish()
             }
         }
-
         btnRegistro.setOnClickListener {
             startActivity(Intent(this, Registro::class.java))
         }
